@@ -1,7 +1,7 @@
 import "./HeaderBanner.css";
-import CrossIcon from "../cross-icon.svg";
+import CrossIcon from "../assets/cross-icon.svg";
 import { useState } from "react";
-import NextIcon from "../next-icon.svg";
+import NextIcon from "../assets/next-icon.svg";
 
 const HeaderBanner = () => {
   const promotions = [
@@ -33,12 +33,7 @@ const HeaderBanner = () => {
   };
   return (
     <div className="container">
-      <img
-        className="header-image"
-        src="/main.png"
-        alt="header_image"
-        style={{}}
-      ></img>
+      <img className="header-image" src="/main.png" alt="header_image"></img>
       <div className="mobile-only">
         <div className="promotion-container">
           {promotions[currentPromotion].text}
@@ -64,11 +59,10 @@ const HeaderBanner = () => {
         </div>
       </div>
       <div style={{ marginRight: "20px" }}>
-        <button className="button">Shop now </button>
+        <button className="header-shop-button ">Shop now </button>
         <img
           className="header-cross-icon"
           src={CrossIcon}
-          style={{ width: "11.5px", height: "11.5px", marginLeft: "10px" }}
           alt="cross-icon"
         ></img>
       </div>

@@ -1,5 +1,5 @@
 import "./Banner.css";
-import CrossIcon from "../cross-icon.svg";
+import CrossIcon from "../assets/cross-icon.svg";
 import { useEffect, useState } from "react";
 
 const Banner = () => {
